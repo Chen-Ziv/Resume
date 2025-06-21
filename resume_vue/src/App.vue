@@ -1,28 +1,39 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import Loading from './components/Loading.vue';
 import AppLayout from './AppLayout.vue';
 
-// 設定 isLoading 為 true，表示先顯示 Loading 畫面
+// 預設為 true（準備顯示 loading 畫面）
 const isLoading = ref(true);
 
-// 當 Loading.vue 執行完成後，改變 isLoading 狀態
+// loading 完成或不是第一次進入時，切換為主畫面
 const finishLoading = () => {
+  localStorage.setItem('visitedResume', 'true'); // 紀錄已訪問過
   isLoading.value = false;
 };
+
+// onMounted 判斷是否首次進入
+onMounted(() => {
+  const visited = localStorage.getItem('visitedResume');
+  if (visited) {
+    // 如果訪問過，就不顯示 loading，直接進入主畫面
+    isLoading.value = false;
+  }
+
+  // 若你還有與 script.js 溝通需求（保留這段）
+  console.log('AppLayout 掛載完成，通知 script.js');
+  window.dispatchEvent(new Event('vue-app-ready'));
+});
 </script>
 
 <template>
   <div>
-    <!-- 先顯示 Loading 畫面，當 isLoading 為 true 時 -->
+    <!-- 首次進入時才會顯示 -->
     <Loading v-if="isLoading" @loading-finish="finishLoading" />
 
-    <!-- 當 Loading 結束後，顯示主版頁面（包含 HelloWorld.vue） -->
+    <!-- 非首次或 loading 結束後顯示主畫面 -->
     <AppLayout v-else>
-      <!-- <AppLayout> -->
-
-        <RouterView />
-      </AppLayout>
+      <RouterView />
+    </AppLayout>
   </div>
 </template>
-

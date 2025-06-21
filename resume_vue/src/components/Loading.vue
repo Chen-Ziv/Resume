@@ -106,47 +106,29 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom,
-      #f5f0e9 0%,
-      #e5d9d2 20%,
-      #cbbab4 40%,
-      #b3b6bb 60%,
-      #a0a5aa 80%,
-      #8d9299 100%);
-  background-attachment: fixed;
+  background: url('background.png') no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
 }
 .loader-wrapper {
-  height: 100vh;
-  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom,
-        #f5f0e9 0%,
-        /* 米膚白 */
-        #e5d9d2 20%,
-        /* 淡粉膚色 */
-        #cbbab4 40%,
-        /* 粉棕 */
-        #b3b6bb 60%,
-        /* 淡霧灰藍 */
-        #a0a5aa 80%,
-        /* 石藍灰 */
-        #8d9299 100%
-        /* 深灰藍底 */
-      );
-   background-attachment: fixed;
+  justify-content: center;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url('background.png') no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 
@@ -154,7 +136,7 @@ body {
 .typing-text {
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   display: flex;

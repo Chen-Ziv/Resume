@@ -1,10 +1,11 @@
 <template>
+  <!-- 整體佈局 -->
   <div class="layout">
     <!-- 導覽列 -->
     <header class="navbar">
       <div class="navbar-inner">
         <div class="navbar-logo">
-          <span class="logo-icon"></span>
+          <span class="logo-icon">個人履歷</span>
           <span></span>
         </div>
 
@@ -29,7 +30,7 @@
 
     <!-- 頁尾 -->
     <footer class="footer">
-      Copyright © 2025  Created by Ziv.
+      Copyright © 2025 Created by Ziv.
     </footer>
   </div>
 </template>
@@ -59,25 +60,31 @@ onUnmounted(() => {
 })
 
 const menuList = [
-  { path: '/', name: 'HelloWorld' },
-  { path: '/Personal ', name: 'Personal' },
-  { path: '/Education', name: 'Education' },
-  { path: '/Professional ', name: 'Professional ' },
+  { path: '/', name: '自我介紹' },
+  { path: '/CramPath', name: '學習歷程' },
+  { path: '/Experience', name: '工作經歷' },
+  { path: '/Skills', name: '技能經歷' },
 ]
+
+
 </script>
 
 <style>
+
+
+
 html,
 body {
   overflow-y: auto;
   height: 100%;
+  color: #333; /* 代替純黑 */
+
 }
 
 .layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: url('/background.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -88,14 +95,14 @@ body {
   justify-content: center;
   z-index: 10;
 }
-
+/*上排Css*/
 .navbar-inner {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f8f8f8;
-  padding: 10px 20px;
+  background: #fffcfce0;
+  padding: 25px 20px;
   width: 100%;
   max-width: 1200px;
   border-radius: 8px;
@@ -143,7 +150,9 @@ body {
 
 .nav-item.active,
 .nav-item:hover {
-  background-color: #e6e6e6;
+  background-color: #dcdcdc;
+  font-weight: bold;
+  color: #111;
 }
 
 .arrow {
@@ -159,13 +168,15 @@ body {
 }
 
 .content-wrapper {
-  background: white;
+  padding: 24px; /* 建議最少 24px 以上 */
+  color: #333333;
+  background: #fffcfce0;
   padding: 30px;
   border-radius: 6px;
   max-width: 1200px;
   width: 100%;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
 }
 
 .footer {
@@ -175,6 +186,10 @@ body {
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   font-style: italic;
+}
+.section-title {
+  padding: 12px 0;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 992px) {
