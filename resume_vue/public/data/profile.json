@@ -1,0 +1,32 @@
+{
+  "sections": [
+    {
+      "id": "intro-content",
+      "type": "text",
+      "data": "歡迎來到我的個人網站，目前資料維護中。"
+    },
+    {
+      "id": "skills-list",
+      "type": "list",
+      "data": ["C#", ".NET Core", "SQL Server"]
+    },
+    {
+      "id": "work-list",
+      "type": "list-html",
+      "data": [
+        {
+          "html": "維護中公司 | 維護中職位2020 – Now</small><p>工作經歷資料尚在整理中。</p>"
+        }
+      ]
+    },
+    {
+      "id": "education-list",
+      "type": "list-html",
+      "data": [
+        {
+          "html": "<strong>維護中學校</strong><br><small>2016 – 2020</small><p>主修資訊工程</p>"
+        }
+      ]
+    }
+  ]
+}
