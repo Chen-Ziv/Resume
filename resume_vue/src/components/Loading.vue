@@ -106,7 +106,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: url('background.png') no-repeat center center fixed;
+  background: url('/background.png') no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -124,7 +124,7 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  background: url('background.png') no-repeat center center fixed;
+  background: url('/background.png') no-repeat center center fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
