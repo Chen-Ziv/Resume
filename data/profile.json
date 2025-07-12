@@ -1,0 +1,152 @@
+﻿[
+  {
+    "ResID": "NXRE202505300000001",
+    "TitleNM": "TEST2",
+    "BItemList": [
+      {
+        "BItemID": "RB001",
+        "BItemNM": "自我介紹",
+        "SItemList": [
+          {
+            "SItemID": "RS001",
+            "SItemNM": "個人簡介",
+            "ContentList": [
+              {
+                "ContentsID": "RD00001",
+                "Content": "填寫個人簡介"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS002",
+            "SItemNM": "求職動機",
+            "ContentList": [
+              {
+                "ContentsID": "RD00002",
+                "Content": "填寫求職動機"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS003",
+            "SItemNM": "學習態度",
+            "ContentList": [
+              {
+                "ContentsID": "RD00003",
+                "Content": "填寫學習態度"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "BItemID": "RB002",
+        "BItemNM": "教育經歷",
+        "SItemList": [
+          {
+            "SItemID": "RS004",
+            "SItemNM": "學校名稱",
+            "ContentList": [
+              {
+                "ContentsID": "RD00004",
+                "Content": "填寫學校名稱"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS005",
+            "SItemNM": "科系學位",
+            "ContentList": [
+              {
+                "ContentsID": "RD00005",
+                "Content": "填寫科系學位"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS006",
+            "SItemNM": "學期期間",
+            "ContentList": [
+              {
+                "ContentsID": "RD00006",
+                "Content": "填寫學期期間"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "BItemID": "RB003",
+        "BItemNM": "工作經歷",
+        "SItemList": [
+          {
+            "SItemID": "RS007",
+            "SItemNM": "公司名稱",
+            "ContentList": [
+              {
+                "ContentsID": "RD00007",
+                "Content": "填寫公司名稱"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS008",
+            "SItemNM": "任職期間",
+            "ContentList": [
+              {
+                "ContentsID": "RD00008",
+                "Content": "填寫任職期間"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS009",
+            "SItemNM": "工作內容",
+            "ContentList": [
+              {
+                "ContentsID": "RD00009",
+                "Content": "填寫工作內容"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "BItemID": "RB004",
+        "BItemNM": "工作技能",
+        "SItemList": [
+          {
+            "SItemID": "RS010",
+            "SItemNM": "技能種類",
+            "ContentList": [
+              {
+                "ContentsID": "RD00010",
+                "Content": "填寫技能種類"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS011",
+            "SItemNM": "技能說明",
+            "ContentList": [
+              {
+                "ContentsID": "RD00011",
+                "Content": "填寫技能說明"
+              }
+            ]
+          },
+          {
+            "SItemID": "RS012",
+            "SItemNM": "技能等級",
+            "ContentList": [
+              {
+                "ContentsID": "RD00012",
+                "Content": "填寫技能等級"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
